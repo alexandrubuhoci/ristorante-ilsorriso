@@ -15,7 +15,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css?v=1.7" />
+    <link rel="stylesheet" href="styles.css?v=1.8" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -89,15 +89,21 @@
         <img class="intro-logo" src="assets/logo-icons-textures/logo.svg" />
         <div class="lower-header">
           <ul>
-            <li class="item" onclick="scrollToSection('about')">Chi siamo</li>
-            <li class="item" onclick="scrollToSection('hours')">Orari</li>
-            <li class="item" onclick="scrollToSection('location')">
-              Dove trovarci
+            <li class="item">
+              <a href="#about"> Chi siamo </a>
             </li>
-            <li class="item" onclick="scrollToSection('menu')">Menu</li>
+            <li class="item">
+              <a href="#hours">Orari</a>
+            </li>
+            <li class="item">
+              <a href="#location">Dove trovarci</a>
+            </li>
+            <li class="item">
+              <a href="#menu">Menu</a>
+            </li>
           </ul>
         </div>
-        <div class="mobile-arrow-wrapper" onclick="scrollToSection('about')">
+        <div class="mobile-arrow-wrapper">
           <i id="arrow" class="mobile-arrow fa-solid fa-caret-down"></i>
         </div>
       </section>
@@ -342,7 +348,7 @@
           <a href="tel:+39063321231">
             <i class="fa-solid fa-phone fa-xl"></i>
           </a>
-          <div>063321231 - 3393689308</div>
+          <div class="number">063321231 - 3393689308</div>
         </div>
         <div class="footer-item">
           <i class="fa-solid fa-clock fa-xl no-cursor"></i>

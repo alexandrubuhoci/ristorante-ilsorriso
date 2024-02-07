@@ -299,7 +299,7 @@ button:hover {
 .intro-logo {
   animation: intro-logo 1.5s ease-out;
   position: absolute;
-  top: 50%;
+  top: calc(50% + 10px);
   left: 50%;
   transform: translate(-50%, -50%);
   width: 500px;
@@ -338,6 +338,9 @@ button:hover {
   margin-right: 10px;
   &:last-of-type {
     margin-right: 0;
+  }
+  a {
+    color: #fff;
   }
 }
 .lower-header ul li:hover {
@@ -743,6 +746,9 @@ footer i.no-cursor {
   display: flex;
   align-items: center;
   font-size: 18px;
+  .number {
+    text-align: center;
+  }
 }
 
 .socials-wrapper {
@@ -813,7 +819,8 @@ footer i.no-cursor {
 @media only screen and (max-width: 1023px) {
   .footer-items-wrapper {
     display: block;
-    width: 300px;
+    max-width: 300px;
+    width: auto;
   }
 }
 
@@ -914,4 +921,23 @@ footer i.no-cursor {
       width: 23px;
     }
   } */
+}
+
+@media only screen and (max-height: 699px) {
+  .intro-logo {
+    height: 60%;
+  }
+}
+
+@media only screen and (max-height: 499px) {
+  .header {
+    height: 40px;
+    top: 10px;
+    .header-item {
+      padding: 0 40px;
+    }
+  }
+  .lower-header ul {
+    height: 50px;
+  }
 }
